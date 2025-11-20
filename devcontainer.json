@@ -1,0 +1,10 @@
+{
+  "name": "JSON Hero Web DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": { "onAutoForward": "openBrowser", "protocol": "http" }
+  },
+  "postCreateCommand": "npm install && npm run build",
+  "remoteEnv": { "SESSION_SECRET": "dev_secret_123" }
+}
